@@ -18,10 +18,10 @@ public class DBUtil {
 		//2.创建数据库连接
 		//url:数据库连接协议
 		
-		String url="jdbc:mysql://localhost/cms";
+		String url="jdbc:mysql://localhost/javacms";
 		Connection conn=null;
 		try {
-			conn = DriverManager.getConnection(url, "root", "leadfar");
+			conn = DriverManager.getConnection(url, "root", "123456");
 			conn.setAutoCommit(false);//表示关闭事务自动提交
 		} catch (SQLException e) {
 			e.printStackTrace();

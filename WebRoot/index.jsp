@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 String path = request.getContextPath();
@@ -31,11 +31,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<form action="servlet/LoginServlet" method="POST">
     	<tr>
     		<td width="100px;">User Name :</td>
-    		<td width="200px;"><input type="text" name="username"/></td>
+    		<td width="200px;"><input type="text" name="username" value="admin"/></td>
     	</tr>
     	<tr>
     		<td>Password :</td>
-    		<td><input type="password" name="password"></td>
+    		<td><input type="password" name="password" value="admin"></td>
     	</tr>
     	<tr>
     		<td>Safe Code :</td>
