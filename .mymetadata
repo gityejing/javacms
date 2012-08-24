@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="JavaCMS"
+  id="myeclipse.1345734293979"
+  context-root="/JavaCMS"
+  j2ee-spec="5.0"
+  archive="JavaCMS.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
