@@ -52,6 +52,10 @@
   <filter>
   	<filter-name>loginFilter</filter-name>
   	<filter-class>com.idceye.servlet.LoginFilter</filter-class>
+  	<init-param>
+  		<param-name>filterPatten</param-name>
+  		<param-value>*.Servlet|*\.jsp</param-value>
+  	</init-param>
   </filter>
   
   <filter-mapping>

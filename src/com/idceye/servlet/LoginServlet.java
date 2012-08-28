@@ -85,7 +85,7 @@ public class LoginServlet extends HttpServlet {
 			DBUtil.close(conn);
 		}		
 		
-		
+		request.getSession().setAttribute("USER_NAME", username);
 		response.sendRedirect(request.getContextPath() + "/main.jsp");
 		
 	}

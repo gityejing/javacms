@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 
 public class LoginFilter implements Filter {
 
+	private String filterPatten;
+	
 	public void destroy() {
 		// TODO Auto-generated method stub
 
@@ -24,13 +26,18 @@ public class LoginFilter implements Filter {
 		HttpServletRequest request = (HttpServletRequest) req;
 		HttpServletResponse response = (HttpServletResponse) resp; 
 		
+		if(request.getSession().getAttribute("USER_NAME") != null){
+			
+		}
+		
 		System.out.println(request.getRequestURI());
 		chain.doFilter(request, response);
 
 	}
 
-	public void init(FilterConfig arg0) throws ServletException {
-		// TODO Auto-generated method stub
+	public void init(FilterConfig config) throws ServletException {
+
+		filterPatten = (String) config.getInitParameter("filterPatten");
 
 	}
 
